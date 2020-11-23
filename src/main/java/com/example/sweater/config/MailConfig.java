@@ -17,9 +17,9 @@ public class MailConfig {
     private String enable;
     @Value("${spring.mail.host}")
     private String host;
-    @Value("${spring.mail.username}")
+    @Value("project.emails.sender@gmail.com")
     private String username;
-    @Value("${spring.mail.password}")
+    @Value("q1sorg14fgy5YsO")
     private String password;
     @Value("${spring.mail.port}")
     private int port;

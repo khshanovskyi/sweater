@@ -10,7 +10,7 @@ scp -i ~/.ssh/sweater-frankfurt.pem \
 
 echo 'Restart server...'
 
-ssh -i ~/.ssh/sweater-frankfurt.pem ec2-user@ec2-18-194-33-207.eu-central-1.compute.amazonaws.com << EOF
+ssh -i ~/.ssh/sweater-frankfurt.pem ec2-user@ec2-18-194-33-207.eu-central-1.compute.amazonaws.com<< EOF
 pgrep java | xargs kill -9
 nohup java -jar sweater-1.0-SNAPSHOT.jar > log.txt &
 EOF
